@@ -1,17 +1,25 @@
 package triangle;
 
-public class Triangle  {
+public class Triangle {
 
     private int a, b, c;
 
-    public Triangle() {
+    Triangle() {
         this.a = 1;
         this.b = 1;
         this.c = 1;
     }
 
-    public Triangle(int a, int b, int c){
-        if(a < 1 || b < 1 || c < 1){
+    int[] getDimensions() {
+        int[] output = new int[3];
+        output[0] = this.a;
+        output[1] = this.b;
+        output[2] = this.c;
+        return output;
+    }
+
+    Triangle(int a, int b, int c) {
+        if (a < 1 || b < 1 || c < 1) {
             throw new IllegalArgumentException("");
         }
         this.a = a;
