@@ -1,6 +1,8 @@
+package triangle;
+
 public class RightTriangleTester {
 
-    public static boolean isRightTriangle(Triangle triangle){
+    public static boolean isRightTriangle(triangle.Triangle triangle){
         boolean output = false;
         int[] ordSides = orderTriangleSides(triangle);
         int[] ordSidesSquares = powerArray(ordSides);
@@ -11,7 +13,7 @@ public class RightTriangleTester {
         return output;
     }
 
-    public static int[] orderTriangleSides(Triangle triangle){
+    public static int[] orderTriangleSides(triangle.Triangle triangle){
         int[] sides = new int[3];
         sides[0] = triangle.getA();
         sides[1] = triangle.getB();

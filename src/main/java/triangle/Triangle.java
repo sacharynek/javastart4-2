@@ -1,3 +1,5 @@
+package triangle;
+
 public class Triangle  {
 
     private int a, b, c;
